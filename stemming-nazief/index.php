@@ -1,11 +1,21 @@
 <?php
 include_once 'simple_html_dom.php';
 include_once 'proxy.php';
+include_once 'connect.php';
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 require_once 'Enhanced_CS.php';
 require_once 'idnstemmer.php';
+
+//change to your own MySQL Setup like your host (but mostly host are same), user, pass, and the database.
+//sql file are stored inside sql folder. Make new database first then import this sql.
+$host='localhost';
+$user='root';
+$pass='';
+$database='dbstbi';
+
+$conn = connect($database, $host, $user, $pass);
 
 //change the url value into your crawling target
 $url = 'https://www.kompas.com/';
@@ -41,7 +51,7 @@ if ($result['code'] == '200') {
             $sebelumPreprocessing = $judulBerita;
             foreach ($juduls as $judul) {
                 $judul = strtolower($judul);
-                $preprocessing = Enhanced_CS($judul);
+                $preprocessing = Enhanced_CS($judul, $conn);
                 $resultPreprocessing = $resultPreprocessing . " " . $preprocessing;
             }
             echo "<td>" . $tanggalBerita . "</td>";
