@@ -3,6 +3,11 @@
 
 it's part of studying Intelligent Information Retrieval in university
 
+## Download
+
+1. You can fork / clone / download as ZIP on this Github repo.
+2. Or you can download from Google Drive [here](https://drive.google.com/file/d/1-EYkDzXRp9qz3ucM6DZZ6oCMP1_-UlmZ/view?usp=sharing)
+
 ## Getting Started
 
 Download or fork this project into your htdocs folder (for Windows user) or /var/www/ (for Linux user).
