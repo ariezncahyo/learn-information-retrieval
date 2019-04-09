@@ -160,11 +160,17 @@
         $i++;
     }
     
+    $documentIdx = 1;
     $q = $sample_data[count($sample_data)-1];
     foreach($sample_data as $eachIndex){
         echo "<tr>";
         $idx = 0;
-        echo "<td>Hamming D".$idx."</td>";
+        if($documentIdx == count($sample_data)){
+            echo "<td>Hamming Q</td>";
+        }
+        else{
+            echo "<td>Hamming D".$documentIdx."</td>";
+        }
         $sum = 0;
         foreach($eachIndex as $valueEachTerm){
             $tfBinary = 0;
@@ -184,6 +190,7 @@
         }
         $hamming[] = $sum;
         echo "</tr>";
+        $documentIdx++;
     }
 
     echo "</table><br><br>";

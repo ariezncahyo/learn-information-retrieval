@@ -96,13 +96,13 @@
 
         foreach ($a as $i => $val) {
             $wkq_wkj += ($val * $b[$i]);
-            $wkq_kuadrat += ($val ** 2);
-            $wkj_kuadrat += ($b[$i] ** 2);
+            $wkq_kuadrat += ($val * $val);
+            $wkj_kuadrat += ($b[$i] * $b[$i]);
         }
 
         $coefficient = $wkq_wkj / ($alpha * $wkq_kuadrat + (1 - $alpha) * $wkj_kuadrat);
 
-        return sqrt((float) $coefficient);
+        return (float) $coefficient;
     }
 
     // Menghitung Dice Coefficient
@@ -141,7 +141,7 @@
 
         $coefficient = $wkq_wkj / ($wkq_kuadrat + $wkj_kuadrat - $wkq_wkj);
 
-        return sqrt((float) $coefficient);
+        return (float) $coefficient;
     }
 
     // Menghitung Jaccard
@@ -183,7 +183,7 @@
             $coefficient = $wkq_wkj / $wkq_kuadrat;
         }
 
-        return sqrt((float) $coefficient);
+        return (float) $coefficient;
     }
 
     // Menghitung Overlap
@@ -222,7 +222,7 @@
 
         $coefficient = $wkq_wkj / (($wkq_kuadrat * $wkj_kuadrat) ** 0.5);
 
-        return sqrt((float) $coefficient);
+        return (float) $coefficient;
     }
 
     // Menghitung Cosine
@@ -263,7 +263,7 @@
 
         $coefficient = $min_wkq_wkj / $wkq;
 
-        return sqrt((float) $coefficient);
+        return (float) $coefficient;
     }
 
     // Menghitung Asymmetric
