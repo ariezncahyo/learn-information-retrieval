@@ -107,10 +107,13 @@ $samples = [
     'Doc11' => [0.48, 2.90],
     'Doc12' => [5.59, 3.11]
 ];
+
+echo "<br><br>";
+
 $kmeans = new KMeans(3);
 $hasil = $kmeans->cluster($samples);
 
-echo "<b><u>Hasil Clustering</u></b><br><br>";
+echo "<b><u>Hasil Clustering dengan KMeans</u></b><br><br>";
 echo "<b><u>Bentuk Array</u></b><br>";
 print_r($hasil);
 
