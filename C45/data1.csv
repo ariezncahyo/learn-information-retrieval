@@ -1,0 +1,13 @@
+"Pelatih", "Kandang Sendiri", "Latihan", "Stamina", "Mental", "Menang"
+Pengertian, Ya, Rutin, Kuat, PD, Ya
+Pengertian, Ya, Rutin, Kuat, Gerogi, Tidak
+Pengertian, Ya, Rutin, Lemah, PD, Ya
+Pengertian, Ya, Jarang, Lemah, PD, Ya
+Pengertian, Ya, Tidak Ada, Lemah, PD, Tidak
+Pengertian, Tidak, Rutin, Kuat, PD, Ya
+Pengertian, Tidak, Jarang, Lemah, Gerogi, Tidak
+Menekan, Ya, Rutin, Lemah, PD, Ya
+Menekan, Tidak, Rutin, Lemah, Gerogi, Tidak
+Menekan, Ya, Jarang, Lemah, Gerogi, Tidak
+Menekan, Ya, Rutin, Kuat, PD, Ya
+Menekan, Tidak, Rutin, Kuat, PD, Ya

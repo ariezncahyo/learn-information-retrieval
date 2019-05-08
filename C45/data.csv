@@ -1,0 +1,13 @@
+"cuaca", "windy", "humidity", "sesuatu", "play"
+Pengertian, false, high, ok, no
+Pengertian, true, high, ok, no
+Pengertian, false, high, ok, no
+Pengertian, false, medium, ok, yes
+Pengertian, true, medium, ok, yes
+Pengertian, false, medium, ok, yes
+Pengertian, true, medium, ok, yes
+Menekan, true, high, ok, yes
+Menekan, false, medium, ok, yes
+Menekan, false, high, ok, yes
+Menekan, false, medium, ok, yes
+Menekan, true, medium, ok, no
